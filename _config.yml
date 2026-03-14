@@ -11,12 +11,12 @@ locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Muhammad Shaheer"
 title_separator          : "-"
-name                     : &name "I am a computer science graduate with a background in Computer and Information Sciences, and a strong interest in research-driven systems work. I completed my Bachelor’s degree in Computer and Information Sciences from the Pakistan Institute of Engineering and Applied Sciences (PIEAS - Ranked 386 in QS 2015)."
-description              : &description "Muhammad Shaheer's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Computer Science graduate from PIEAS with hands-on experience in cloud infrastructure, DevOps, and distributed systems. Prospective PhD student focused on Kubernetes-based orchestration, resource scheduling, and scalable systems research."
+description              : &description "Muhammad Shaheer — Cloud & DevOps Engineer | Prospective PhD Student | Distributed Systems Researcher"
 url                      : https://Shaheer.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "Shaheer4636/Shaheer.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,13 +24,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpeg"
-  name             : "Shaheer"
-  pronouns         : # example: "she/her"  
-  bio              : "Self motivated prospective Phd student"
+  name             : "Muhammad Shaheer"
+  pronouns         : # example: "she/her"
+  bio              : "Cloud & DevOps Engineer at AppLab Qatar | Prospective PhD Student in Distributed Systems | GRE 165V/163Q | IELTS 7.0"
   location         : "Islamabad, Pakistan"
-  employer         : "PIEAS"
+  employer         : "AppLab Qatar"
   uri              : # URL
-  email            : "muhammadshaheer4636@gmail.com" 
+  email            : "muhammadshaheer4636@gmail.com"
 
   # Academic websites
   academia         : # URL
@@ -52,6 +52,7 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "https://github.com/Shaheer4636"
+  linkedin         : "https://linkedin.com/in/Shaheer"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

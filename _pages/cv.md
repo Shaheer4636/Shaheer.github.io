@@ -11,54 +11,67 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **B.S. Computer and Information Sciences** — PIEAS, Islamabad, Pakistan
+  Sep 2020 – Jun 2024 | CGPA: 3.48/4.0
+  Honors: Distinction in 4 subjects | Appreciation Certificate (Outstanding FYP)
 
-Work experience
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Research Intern** — National Centre for Physics (NCP – CoE Aitec), Islamabad
+  Jun 2023 – Sept 2023
+  * Prototyped a Kubernetes-based multi-tenant ML platform using Kubeflow on on-premise physical servers with LDAP-backed authentication and resource quota controls (CPU/memory).
+  * Deployed a distributed big-data processing stack using Apache Hadoop (HDFS, YARN), HBase, and ZooKeeper.
+  * Assisted in cluster setup, service configuration, and operational validation in a shared research computing environment.
+  * Supervised by Dr. Muhammad Imran (former CERN scientist).
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Work Experience
+======
+* **Cloud and DevOps Engineer** — AppLab Qatar, Islamabad *(Oct 2025 – Present)*
+  * Built endpoint heartbeats with AWS CloudWatch Synthetics to meet 99.99% SLA, tracking p95/p99 latency with CloudWatch/SNS alerts that reduced MTTR.
+  * Developed a reporting pipeline from canary HTML → S3 → Lambda → ECR container (wkhtmltopdf) → timestamped PDF, triggered by EventBridge, secured with IAM least privilege, KMS, and S3 lifecycle.
+  * Released Terraform-based infrastructure with CI/CD in Azure DevOps and GitHub Actions, used env-scoped tfvars, produced proactive SLA-breach alerts and ~40% less manual reporting.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* **DevOps Engineer** — Priv Inc., Dallas TX (Remote) *(Apr 2024 – Oct 2025)*
+  * Delivered reliable AWS infrastructure across Kubernetes, databases, and Elasticsearch with centralized monitoring sustaining 99.9%+ uptime.
+  * Established disaster-recovery runbooks and codified the stack in Terraform, enabling ≤1-hour RTO and ≤15-minute RPO.
+
+* **Lead Instructor / Teaching Assistant** — Primus Learning, Dallas TX (Remote) *(Feb 2025 – May 2025)*
+  * Delivered 120 hours of live instruction to 25 learners covering Python, OOP, pytest, CI/CD, containerization, and SDLC lifecycle.
+  * Designed weekly objectives, hands-on labs, graded assignments, and supervised a capstone project incorporating GitHub Actions CI pipeline.
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Languages:** Python, Golang, SQL, HTML, CSS
+* **Cloud & Infrastructure:** AWS (CloudWatch, Lambda, EKS, S3, IAM, ECR, EventBridge, SNS, KMS), Azure (Web Apps, DevOps, DNS, Firewall), Terraform
+* **Container & Orchestration:** Kubernetes, Kubeflow, Docker, Helm
+* **Databases:** MySQL, PostgreSQL, DynamoDB, Elasticsearch, HBase
+* **Big Data:** Apache Hadoop (HDFS, YARN), ZooKeeper
+* **ML/DL Frameworks:** TensorFlow, scikit-learn, PyTorch
+* **Developer Tools:** VS Code, GitHub, GitLab, Jira, Google Colab, Jupyter
+
+Test Scores
+======
+* **GRE General Test** (Jul 24, 2025): Verbal Reasoning 165 (95th percentile) | Quantitative Reasoning 163 (60th percentile) | Analytical Writing 4.0 (63rd percentile)
+* **IELTS Academic** (Dec 13, 2025): Overall Band 7.0 (C1) — Listening 8.0 | Reading 7.0 | Writing 6.5 | Speaking 7.0
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+
+Service and Leadership
 ======
-* Currently signed in to 43 different slack teams
+* **Cloud Captain** — AWS Cloud Club PIEAS, PIEAS (Jan 2022 – Jan 2023)
+  * Organized 4 campus events on AWS technologies; grew student and faculty participation; participated in global AWS online sessions.
+  * Recognized by AWS with an official experience letter (February 2025).
+
+* **Chairperson** — IEEE CS Chapter PIEAS (Sept 2022 – Sept 2023)
+  * Led the Computer Science chapter of the IEEE PIEAS Student Branch; organized technical events, workshops, and community initiatives.
+  * Received IEEE Letter of Appreciation for outstanding service (June 2024).
