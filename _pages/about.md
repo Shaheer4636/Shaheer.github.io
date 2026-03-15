@@ -17,6 +17,15 @@ My broader research goal is to develop orchestration layers that unify on-premis
 
 ---
 
+<div style="background: linear-gradient(135deg, #2f7f93 0%, #1a5a6e 100%); border-radius: 12px; padding: 1.6rem 2rem; margin-bottom: 2rem; color: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+  <div style="font-size: 1.5rem; margin-bottom: 0.4rem;">✍️</div>
+  <div style="font-size: 1.15em; font-weight: 700; margin-bottom: 0.4rem;">Personal Blog</div>
+  <div style="color: rgba(255,255,255,0.88); font-size: 0.97em; line-height: 1.65; margin-bottom: 0.9rem;">Beyond research papers and technical work — reflections on learning, life, ideas, and experiences worth writing down.</div>
+  <a href="/personal-blog/" style="display: inline-block; background: rgba(255,255,255,0.18); color: #fff; border: 1px solid rgba(255,255,255,0.45); padding: 0.38rem 1.1rem; border-radius: 6px; font-size: 0.92em; font-weight: 600; text-decoration: none;">Read the Blog →</a>
+</div>
+
+---
+
 ## News
 
 **[Mar 2026]** Awarded **$5,000 in Microsoft Azure for Research credits** to support cloud infrastructure experiments and distributed systems research.
@@ -54,12 +63,6 @@ Multi-agent AI systems — where autonomous agents interact, delegate, and share
 
 **B.S. Computer and Information Sciences** — PIEAS, Islamabad, Pakistan (Sep 2020 – Jun 2024)
 CGPA: 3.48/4.0 | Distinction in 4 subjects | Outstanding FYP Award
-
----
-
-## Personal Blog
-
-Beyond the research and technical work, I keep a [personal blog](/personal-blog/) — a space for reflections on learning, experiences, ideas, and the moments worth writing down. If you're curious about the person behind the papers, you're welcome there.
 
 ---
 
