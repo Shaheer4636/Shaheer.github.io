@@ -234,6 +234,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  personal_blog:
+    output: true
+    permalink: /personal-blog/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -291,6 +294,16 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _personal_blog
+  - scope:
+      path: ""
+      type: personal_blog
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
 
 
 # Sass/SCSS

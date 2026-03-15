@@ -57,6 +57,12 @@ CGPA: 3.48/4.0 | Distinction in 4 subjects | Outstanding FYP Award
 
 ---
 
+## Personal Blog
+
+Beyond the research and technical work, I keep a [personal blog](/personal-blog/) — a space for reflections on learning, experiences, ideas, and the moments worth writing down. If you're curious about the person behind the papers, you're welcome there.
+
+---
+
 ## Selected Experience
 
 **AppLab Qatar** — Cloud and DevOps Engineer *(Oct 2025 – Present)*
