@@ -13,9 +13,9 @@ title                    : "Muhammad Shaheer"
 title_separator          : "-"
 name                     : &name "Computer Science graduate from PIEAS with hands-on experience in cloud infrastructure, DevOps, and distributed systems. Prospective PhD student focused on Kubernetes-based orchestration, resource scheduling, and scalable systems research."
 description              : &description "Muhammad Shaheer — Cloud & DevOps Engineer | Prospective PhD Student | Distributed Systems Researcher"
-url                      : https://Shaheer.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://Shaheer4636.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/Shaheer.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "Shaheer4636/Shaheer.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
