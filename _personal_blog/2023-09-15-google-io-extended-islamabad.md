@@ -8,10 +8,10 @@ tags:
   - Google Cloud
   - Islamabad
 header:
-  teaser: /images/personal/Google-IO-Extended-Program.jpeg
+  teaser: /Shaheer.github.io/images/personal/Google-IO-Extended-Program.jpeg
 ---
 
-![Google I/O Extended Islamabad — Program](/images/personal/Google-IO-Extended-Program.jpeg)
+![Google I/O Extended Islamabad — Program]({{ site.baseurl }}/images/personal/Google-IO-Extended-Program.jpeg)
 
 I remember walking into the venue and immediately noticing the energy. It wasn't the usual stiff conference atmosphere — it was genuinely excited. People were there because they wanted to be, because something was happening in the technology world that felt urgent and worth paying attention to.
 

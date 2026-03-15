@@ -7,10 +7,10 @@ tags:
   - lifestyle
   - health
 header:
-  teaser: /images/personal/Fitness-2024.jpeg
+  teaser: /Shaheer.github.io/images/personal/Fitness-2024.jpeg
 ---
 
-![Training session](/images/personal/Fitness-2024.jpeg)
+![Training session]({{ site.baseurl }}/images/personal/Fitness-2024.jpeg)
 
 There's a version of me from a few years ago who would have laughed at the idea of a consistent workout schedule. Between university deadlines, research projects, and now a full-time engineering role, "consistent" felt like a word that belonged to people with simpler lives.
 
@@ -33,7 +33,7 @@ My weekly structure looks like this:
 - 30–45 minutes — a mix of steady-state (incline walking, cycling) and occasional HIIT when I'm feeling ambitious
 - Nothing too extreme — the goal is cardiovascular health and staying lean, not punishment
 
-![In the gym](/images/personal/Fitness2-2024.jpeg)
+![In the gym]({{ site.baseurl }}/images/personal/Fitness2-2024.jpeg)
 
 ---
 
