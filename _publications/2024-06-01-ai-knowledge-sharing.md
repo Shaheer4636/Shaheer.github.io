@@ -6,7 +6,7 @@ permalink: /publication/2024-06-01-ai-knowledge-sharing
 excerpt: 'This published paper investigates how artificial intelligence tools and techniques can augment knowledge sharing and management workflows within educational institutions, examining both theoretical frameworks and practical deployments.'
 date: 2024-06-01
 venue: 'Published'
-paperurl: 'https://scholar.google.com/citations?user=WBuMkrIAAAAJ&hl=en'
+paperurl: 'https://thecrsss.com/index.php/Journal/article/view/613'
 citation: 'Shaheer, M. et al. (2024). &quot;How AI Supports Knowledge Sharing and Management in Educational Institutions.&quot; <i>Published</i>.'
 ---
 

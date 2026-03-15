@@ -31,11 +31,11 @@ Work Experience
   * Developed a reporting pipeline from canary HTML → S3 → Lambda → ECR container (wkhtmltopdf) → timestamped PDF, triggered by EventBridge, secured with IAM least privilege, KMS, and S3 lifecycle.
   * Released Terraform-based infrastructure with CI/CD in Azure DevOps and GitHub Actions, used env-scoped tfvars, produced proactive SLA-breach alerts and ~40% less manual reporting.
 
-* **DevOps Engineer** — Priv Inc., Dallas TX (Remote) *(Apr 2024 – Oct 2025)*
+* **DevOps Engineer** — [Priv Inc.](https://drive.google.com/file/d/1PUew2dQhjoTGv6m7fjJSUG2gRx5gH2XC/view), Dallas TX (Remote) *(Apr 2024 – Oct 2025)*
   * Delivered reliable AWS infrastructure across Kubernetes, databases, and Elasticsearch with centralized monitoring sustaining 99.9%+ uptime.
   * Established disaster-recovery runbooks and codified the stack in Terraform, enabling ≤1-hour RTO and ≤15-minute RPO.
 
-* **Lead Instructor / Teaching Assistant** — Primus Learning, Dallas TX (Remote) *(Feb 2025 – May 2025)*
+* **Lead Instructor / Teaching Assistant** — [Primus Learning](https://drive.google.com/file/d/1zM_2k1ZWaLyvjQhLqScKt3U0dh6mFG4R/view), Dallas TX (Remote) *(Feb 2025 – May 2025)*
   * Delivered 120 hours of live instruction to 25 learners covering Python, OOP, pytest, CI/CD, containerization, and SDLC lifecycle.
   * Designed weekly objectives, hands-on labs, graded assignments, and supervised a capstone project incorporating GitHub Actions CI pipeline.
 
@@ -52,7 +52,6 @@ Skills
 Test Scores
 ======
 * **GRE General Test** (Jul 24, 2025): Verbal Reasoning 165 (95th percentile) | Quantitative Reasoning 163 (60th percentile) | Analytical Writing 4.0 (63rd percentile)
-* **IELTS Academic** (Dec 13, 2025): Overall Band 7.0 (C1) — Listening 8.0 | Reading 7.0 | Writing 6.5 | Speaking 7.0
 
 Publications
 ======
@@ -70,8 +69,8 @@ Service and Leadership
 ======
 * **Cloud Captain** — AWS Cloud Club PIEAS, PIEAS (Jan 2022 – Jan 2023)
   * Organized 4 campus events on AWS technologies; grew student and faculty participation; participated in global AWS online sessions.
-  * Recognized by AWS with an official experience letter (February 2025).
+  * Recognized by AWS with an [official experience letter](https://drive.google.com/file/d/1E0Q13bcEZTLVbNO2te4i9Bzk6V6k2yWv/view).
 
 * **Chairperson** — IEEE CS Chapter PIEAS (Sept 2022 – Sept 2023)
   * Led the Computer Science chapter of the IEEE PIEAS Student Branch; organized technical events, workshops, and community initiatives.
-  * Received IEEE Letter of Appreciation for outstanding service (June 2024).
+  * Received [IEEE Letter of Appreciation](https://drive.google.com/file/d/15KgmttvxMtfzPMsO5thpGPh0Tmp7wNFF/view?usp=sharing) for outstanding service (June 2024).

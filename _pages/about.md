@@ -7,21 +7,21 @@ redirect_from:
   - /about.html
 ---
 
-I am a Computer Science graduate from the [Pakistan Institute of Engineering and Applied Sciences (PIEAS)](https://www.pieas.edu.pk), where I earned a Bachelor of Computer and Information Sciences with a **3.48/4.0 CGPA** — receiving distinction in four subjects and an Appreciation Certificate for an Outstanding Final Year Project.
+I am a Computer Science graduate from the [Pakistan Institute of Engineering and Applied Sciences (PIEAS)](https://www.pieas.edu.pk) with a **3.48/4.0 CGPA**, currently working as a Cloud and DevOps Engineer while pursuing a PhD in distributed systems and cloud infrastructure. My research centers on the design and evaluation of large-scale orchestration systems — specifically how clusters, schedulers, and resource managers can be made reliable, secure, and efficient across heterogeneous environments.
 
-My research and professional work sit at the intersection of **distributed systems, cloud infrastructure, and container orchestration**. While most of my peers focused on AI, I became captivated by the systems that make large-scale computation possible — schedulers, resource managers, and the infrastructure that holds everything together.
+My foundational research work began at the **National Centre for Physics (NCP – CoE Aitec)** under Dr. Muhammad Imran, a former CERN scientist, where I deployed Kubernetes-based infrastructure for distributed workloads on bare-metal on-premise servers. I extended this as my Final Year Project at PIEAS under Dr. Irfan Ul Haq, resulting in a published research paper and a platform that earned research funding.
 
-I am currently a **Cloud and DevOps Engineer at AppLab Qatar**, where I build SLA-enforcement pipelines, observability tooling, and Terraform-managed infrastructure with CI/CD automation. Previously at **Priv Inc.** I maintained AWS infrastructure across Kubernetes, databases, and Elasticsearch at 99.9%+ uptime and established disaster-recovery runbooks enabling ≤1-hour RTO.
+I am currently collaborating with researchers at **Rensselaer Polytechnic Institute (RPI)** on **Privacy, Security, and Data Leakage Concerns in Multi-Agent AI Systems** — examining how autonomous agent pipelines introduce novel threat surfaces, how sensitive data propagates across agent boundaries, and what architectural and policy-level controls are necessary to contain leakage in distributed agentic deployments.
 
-My long-term goal is to pursue a **PhD in Distributed Systems**, contributing research on orchestration layers that unify on-premises and cloud clusters. I am actively applying to PhD programs and have received strong GRE scores (Verbal: 165 — 95th percentile, Quantitative: 163 — 60th percentile) and an IELTS band of 7.0.
+My broader research goal is to develop orchestration layers that unify on-premises and cloud clusters, with a focus on resource scheduling, fault tolerance, and security boundaries in distributed systems.
 
 ---
 
 ## News
 
-**[Mar 2026]** Awarded **$5,000 in Microsoft Azure for Research credits** to support ongoing research in cloud infrastructure and Kubernetes-based ML platform development.
+**[Mar 2026]** Awarded **$5,000 in Microsoft Azure for Research credits** to support cloud infrastructure experiments and distributed systems research.
 
-**[Dec 2025]** IELTS Academic — Overall Band **7.0** (Listening: 8.0, Reading: 7.0, Writing: 6.5, Speaking: 7.0).
+**[Mar 2026]** Ongoing research collaboration with **RPI** on **Privacy, Security, and Data Leakage in Multi-Agent AI Systems**.
 
 **[Jul 2025]** GRE General Test — Verbal **165** (95th percentile), Quantitative **163** (60th percentile), Analytical Writing **4.0** (63rd percentile).
 
@@ -29,16 +29,24 @@ My long-term goal is to pursue a **PhD in Distributed Systems**, contributing re
 
 **[Aug 2025]** Received certification from Primus Learning confirming 120 hours of live instruction as Lead Instructor for the Python Programming & SDLC bootcamp.
 
-**[Mar 2025]** Launched **DeepCare** — a multi-disease screening platform deployed on Azure Web Apps with DNS, firewall, and CloudFront CDN configuration.
-
 ---
 
 ## Research Interests
 
-- Container orchestration and Kubernetes-based resource scheduling
-- Distributed systems reliability and fault tolerance
-- Cloud-native infrastructure design and hybrid cluster management
-- Machine learning platform infrastructure (MLOps)
+- Distributed systems reliability, fault tolerance, and resource scheduling
+- Container orchestration and Kubernetes-based cluster management
+- Security and privacy in distributed and multi-agent systems
+- Hybrid cloud and on-premises infrastructure design
+- Data leakage and trust boundaries in agentic AI deployments
+
+---
+
+## Ongoing Research
+
+**Privacy, Security, and Data Leakage Concerns in Multi-Agent AI Systems**
+*Collaboration with Rensselaer Polytechnic Institute (RPI)*
+
+Multi-agent AI systems — where autonomous agents interact, delegate, and share context across boundaries — introduce a class of security and privacy challenges that are structurally different from those in traditional software. This research investigates how sensitive data propagates across agent handoffs, what leakage vectors emerge in orchestration layers, and how distributed system design principles can inform containment strategies. The work draws on formal threat modeling, empirical analysis of agent communication patterns, and evaluation of architectural controls including sandboxing, access scoping, and audit mechanisms.
 
 ---
 
@@ -58,7 +66,7 @@ Built CloudWatch Synthetics heartbeats, automated SLA-breach reporting pipelines
 Maintained AWS infrastructure across Kubernetes, databases, and Elasticsearch at 99.9%+ uptime. Established DR runbooks enabling ≤1-hour RTO and ≤15-minute RPO.
 
 **National Centre for Physics (NCP)** — Research Intern *(Jun 2023 – Sept 2023)*
-Prototyped a Kubernetes-based multi-tenant ML platform using Kubeflow with LDAP-backed authentication and resource quota controls. Contributed to Apache Hadoop (HDFS, YARN, HBase, ZooKeeper) cluster setup.
+Deployed Kubernetes-based multi-tenant research infrastructure using Kubeflow with LDAP-backed authentication and per-namespace resource quota controls on bare-metal servers. Contributed to Apache Hadoop (HDFS, YARN, HBase, ZooKeeper) cluster setup.
 
-**Primus Learning** — Lead Instructor / Teaching Assistant *(Feb 2025 – May 2025)*
-Delivered 120 hours of live instruction to 25 learners covering Python, OOP, unit testing, CI/CD, and SDLC fundamentals.
+**Primus Learning** — Lead Instructor *(Feb 2025 – May 2025)*
+Delivered 120 hours of instruction to 25 learners covering Python, software testing, CI/CD, and SDLC fundamentals.

@@ -31,3 +31,5 @@ Models were evaluated with:
 - Production-ready deployment with DNS, firewall rules, and CDN configuration
 
 **Date:** March 2025
+
+[View Project Deck](https://docs.google.com/presentation/d/1FwHrKvooXxqTOK7MmE8j0ojdDtiyhOpKXk4_atrbQR8/edit?slide=id.p1#slide=id.p1)
