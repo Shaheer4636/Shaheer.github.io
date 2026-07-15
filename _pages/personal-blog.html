@@ -6,214 +6,420 @@ author_profile: false
 ---
 
 <style>
-.blogIntro {
-  background: linear-gradient(135deg, var(--global-base-color) 0%, #1a5a6e 100%);
-  border-radius: 12px;
-  padding: 2rem 2rem;
-  margin-bottom: 2rem;
-  color: #fff;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+.blogPage {
+  max-width: 1120px;
+  margin: 120px auto 48px;
+  padding: 0 24px;
 }
-.blogIntro h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.8rem;
+.blogGrid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
 }
-.blogIntro p {
+.blogSidebar {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+}
+.sidebarCard {
+  padding: 24px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+}
+.profilePhoto {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto 24px;
+  object-fit: cover;
+}
+.profileName {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.profileRole,
+.profileLocation {
+  margin: 12px 0 0;
+  color: rgba(255,255,255,0.78);
+  font-size: 0.96rem;
+  text-align: center;
   line-height: 1.7;
 }
-.blogSectionTitle {
-  display: block;
-  margin: 2rem 0 1rem 0;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--global-base-color);
-}
-.blogFilterBar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-bottom: 1.5rem;
-}
-.filterButton {
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
-  background: #f4f7f9;
-  border: 1px solid rgba(26,90,110,0.15);
-  color: #1a5a6e;
-  cursor: pointer;
-  font-size: 0.92rem;
-  font-weight: 600;
-}
-.filterButton:hover,
-.filterButton.active {
-  background: #e8f1f5;
-}
-.blogList {
-  margin: 0;
+.profileLinks {
+  margin: 28px 0 0;
   padding: 0;
   list-style: none;
 }
-.blogItem {
-  margin: 0 0 1.5rem 0;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+.profileLinkItem {
+  margin: 0 0 12px;
 }
-.blogItemTitle {
-  margin: 0 0 0.35rem 0;
-  font-size: 1.2rem;
+.profileLinkItem:last-child {
+  margin-bottom: 0;
 }
-.blogItemTitle a {
-  color: #2eb8d5;
+.profileLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255,255,255,0.9);
   text-decoration: none;
-}
-.blogItemTitle a:hover {
-  text-decoration: underline;
-}
-.blogMeta {
-  margin: 0 0 0.75rem 0;
-  color: rgba(255,255,255,0.78);
   font-size: 0.95rem;
 }
-.blogExcerpt {
+.profileLink:hover,
+.profileLink:focus-visible {
+  color: #83d0ff;
+}
+.blogMain {
+  overflow: hidden;
+}
+.blogHeader {
+  margin-bottom: 40px;
+}
+.blogTitle {
+  margin: 0 0 24px;
+  font-size: 2.6rem;
+  line-height: 1.05;
+}
+.heroCard {
+  padding: 32px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.heroHeading {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.heroText {
   margin: 0;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.86);
+  font-size: 1rem;
   line-height: 1.7;
 }
-.blogEmpty {
-  background: var(--global-footer-bg-color);
-  border-left: 4px solid var(--global-base-color);
-  border-radius: 0 8px 8px 0;
-  padding: 1.5rem 1.75rem;
-  color: var(--global-text-color);
-  font-size: 0.97em;
+.controlsRow {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
 }
-.blogEmpty strong {
-  color: var(--global-base-color);
+.searchField {
+  position: relative;
+}
+.searchInput {
+  width: 100%;
+  padding: 14px 16px 14px 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.95);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.searchInput::placeholder {
+  color: rgba(255,255,255,0.55);
+}
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.6);
+}
+.filterPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filterPill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.92);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.filterPill:hover,
+.filterPill:focus-visible,
+.filterPill.active {
+  background: rgba(131,208,255,0.18);
+  border-color: rgba(131,208,255,0.4);
+}
+.postsGrid {
+  display: grid;
+  gap: 20px;
+}
+.yearSection {
+  margin: 0;
+}
+.yearHeading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 24px;
+}
+.yearHeading h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+.yearDivider {
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+}
+.postCard {
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+.postCard:hover,
+.postCard:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  border-color: rgba(131,208,255,0.35);
+}
+.postTitle {
+  margin: 0 0 12px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #83d0ff;
+  text-decoration: none;
+}
+.postTitle:hover,
+.postTitle:focus-visible {
+  text-decoration: underline;
+}
+.postMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 16px;
+  color: rgba(255,255,255,0.65);
+  font-size: 0.95rem;
+}
+.metaIcon {
+  margin-right: 8px;
+  color: rgba(255,255,255,0.55);
+}
+.postExcerpt {
+  margin: 0 0 18px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.readMore {
+  color: #83d0ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.readMore:hover,
+.readMore:focus-visible {
+  text-decoration: underline;
+}
+.emptyState {
+  margin-top: 28px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.88);
+}
+.resetButton {
+  margin-top: 18px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.95);
+  cursor: pointer;
+}
+.resetButton:hover,
+.resetButton:focus-visible {
+  background: rgba(255,255,255,0.1);
+}
+@media screen and (max-width: 1024px) {
+  .blogGrid {
+    grid-template-columns: 1fr;
+  }
+  .blogSidebar {
+    position: relative;
+    top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blogPage {
+    margin: 100px auto 32px;
+  }
+  .controlsRow {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
 {% include base_path %}
 
-<div class="blogIntro">
-  <h2>Personal blog</h2>
-  <p>Short notes on systems, tools, workflow, and the habits that matter in engineering work.</p>
-</div>
+<div class="blogPage">
+  <div class="blogGrid">
+    <aside class="blogSidebar" aria-label="Profile information">
+      <section class="sidebarCard">
+        <img class="profilePhoto" src="{{ base_path }}/profile.jpeg" alt="Profile photo of Muhammad Shaheer">
+        <p class="profileName">Muhammad Shaheer</p>
+        <p class="profileRole">Cloud and DevOps Engineer at AppLab Qatar</p>
+        <p class="profileLocation">Islamabad, Pakistan</p>
+        <ul class="profileLinks">
+          <li class="profileLinkItem"><a class="profileLink" href="mailto:muhammadshaheer4636@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a></li>
+          <li class="profileLinkItem"><a class="profileLink" href="https://scholar.google.com/citations?user=WBuMkrIAAAAJ&hl=en"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Google Scholar</a></li>
+          <li class="profileLinkItem"><a class="profileLink" href="https://github.com/Shaheer4636"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
+          <li class="profileLinkItem"><a class="profileLink" href="https://bsky.app/profile/Shaheer4636"><i class="fa fa-bullhorn" aria-hidden="true"></i>Bluesky</a></li>
+        </ul>
+      </section>
+    </aside>
 
-<span class="blogSectionTitle">Filter by year or month</span>
+    <main>
+      <header class="blogHeader">
+        <h1 class="blogTitle">Personal Blog</h1>
+        <section class="heroCard">
+          <h2 class="heroHeading">A clean, readable engineer journal</h2>
+          <p class="heroText">This page has a true article layout with grouped posts, real filters, and a structure that matches serious engineering writing. Search by keywords and filter by year to reach the post you need.</p>
+        </section>
+      </header>
 
-<div class="blogFilterBar" id="blogFilterBar"></div>
-
-<ol class="blogList" id="blogList">
-  {% assign postsByDate = site.personal_blog | sort: 'date' | reverse %}
-  {% assign currentYear = '' %}
-  {% assign currentMonth = '' %}
-  {% for post in postsByDate %}
-    {% assign postYear = post.date | date: '%Y' %}
-    {% assign postMonth = post.date | date: '%B' %}
-    <li class="blogItem" data-year="{{ postYear }}" data-month="{{ postMonth | downcase }}">
-      {% if postYear != currentYear %}
-        <h2 id="{{ postYear | slugify }}" class="archive__subtitle">{{ postYear }}</h2>
-        {% assign currentYear = postYear %}
-        {% assign currentMonth = '' %}
-      {% endif %}
-      {% if postMonth != currentMonth %}
-        <h3 class="archive__subtitle" style="font-size: 1rem; margin: 0.75rem 0 0.5rem 0; color: rgba(255,255,255,0.78);">{{ postMonth }}</h3>
-        {% assign currentMonth = postMonth %}
-      {% endif %}
-      <div class="blogItemTitle">
-        <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+      <div class="controlsRow">
+        <div class="searchField">
+          <i class="fa fa-search searchIcon" aria-hidden="true"></i>
+          <input id="searchInput" class="searchInput" type="search" placeholder="Search posts" aria-label="Search posts">
+        </div>
+        <div class="filterPills" id="yearFilter" aria-label="Filter posts by year"></div>
       </div>
-      <p class="blogMeta">Published: {{ post.date | date: '%B %d, %Y' }}</p>
-      {% if post.excerpt %}
-        <p class="blogExcerpt">{{ post.excerpt | markdownify | strip_html }}</p>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ol>
+
+      <div class="postsGrid" id="postsGrid">
+        {% assign blog_posts = site.personal_blog | sort: 'date' | reverse %}
+        {% assign current_year = '' %}
+        {% for post in blog_posts %}
+          {% assign post_year = post.date | date: '%Y' %}
+          {% if post_year != current_year %}
+            <div class="yearSection" data-year="{{ post_year }}">
+              <div class="yearHeading"><h2>{{ post_year }}</h2><span class="yearDivider"></span></div>
+            </div>
+            {% assign current_year = post_year %}
+          {% endif %}
+          <article class="postCard" data-title="{{ post.title | strip_html | downcase }}" data-excerpt="{{ post.excerpt | strip_html | downcase }}" data-year="{{ post_year }}">
+            <a class="postTitle" href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+            <div class="postMeta">
+              <span><i class="fa fa-calendar metaIcon" aria-hidden="true"></i>{{ post.date | date: '%B %d, %Y' }}</span>
+              <span aria-hidden="true">·</span>
+              <span><i class="fa fa-clock-o metaIcon" aria-hidden="true"></i>{{ post.read_time | default: '4 min read' }}</span>
+            </div>
+            <p class="postExcerpt">{{ post.excerpt | markdownify | strip_html }}</p>
+            <a class="readMore" href="{{ base_path }}{{ post.url }}">Read more</a>
+          </article>
+        {% endfor %}
+      </div>
+
+      <div class="emptyState" id="emptyState" hidden>
+        <p>No posts match your search.</p>
+        <button type="button" class="resetButton" id="resetButton">Reset filters</button>
+      </div>
+    </main>
+  </div>
+</div>
 
 <script>
 (function() {
-  var blogList = document.getElementById('blogList');
-  var filterBar = document.getElementById('blogFilterBar');
-  var posts = Array.prototype.slice.call(blogList.querySelectorAll('.blogItem'));
+  var searchInput = document.getElementById('searchInput');
+  var yearFilter = document.getElementById('yearFilter');
+  var postsGrid = document.getElementById('postsGrid');
+  var emptyState = document.getElementById('emptyState');
+  var resetButton = document.getElementById('resetButton');
+  var postCards = Array.prototype.slice.call(postsGrid.querySelectorAll('.postCard'));
+  var yearSections = Array.prototype.slice.call(postsGrid.querySelectorAll('.yearSection'));
 
-  var years = posts.reduce(function(acc, item) {
-    var year = item.getAttribute('data-year');
-    if (year && acc.indexOf(year) === -1) {
-      acc.push(year);
-    }
-    return acc;
-  }, []);
+  var years = Array.from(new Set(postCards.map(function(card) {
+    return card.getAttribute('data-year');
+  })));
 
-  var months = posts.reduce(function(acc, item) {
-    var month = item.getAttribute('data-month');
-    if (month && acc.indexOf(month) === -1) {
-      acc.push(month);
-    }
-    return acc;
-  }, []);
+  var activeYear = 'all';
 
-  var activeYear = '';
-  var activeMonth = '';
-
-  function createButton(label, value, type) {
+  function createButton(label, value) {
     var button = document.createElement('button');
     button.type = 'button';
-    button.className = 'filterButton';
+    button.className = 'filterPill';
     button.textContent = label;
-    button.setAttribute('data-filter-type', type);
-    button.setAttribute('data-filter-value', value);
+    button.setAttribute('data-value', value);
     button.addEventListener('click', function() {
-      if (type === 'year') {
-        activeYear = activeYear === value ? '' : value;
-      } else {
-        activeMonth = activeMonth === value ? '' : value;
-      }
+      activeYear = activeYear === value ? 'all' : value;
       updateFilters();
-      updateActiveState();
+      updateButtons();
     });
     return button;
   }
 
   function updateFilters() {
-    posts.forEach(function(item) {
-      var showYear = !activeYear || item.getAttribute('data-year') === activeYear;
-      var showMonth = !activeMonth || item.getAttribute('data-month') === activeMonth;
-      item.style.display = showYear && showMonth ? 'block' : 'none';
-    });
-  }
+    var text = searchInput.value.trim().toLowerCase();
+    var visibleCount = 0;
 
-  function updateActiveState() {
-    var buttons = filterBar.querySelectorAll('.filterButton');
-    buttons.forEach(function(button) {
-      var type = button.getAttribute('data-filter-type');
-      var value = button.getAttribute('data-filter-value');
-      if ((type === 'year' && value === activeYear) || (type === 'month' && value === activeMonth)) {
-        button.classList.add('active');
-      } else {
-        button.classList.remove('active');
+    postCards.forEach(function(card) {
+      var title = card.getAttribute('data-title');
+      var excerpt = card.getAttribute('data-excerpt');
+      var year = card.getAttribute('data-year');
+      var matchesYear = activeYear === 'all' || year === activeYear;
+      var matchesText = !text || title.indexOf(text) !== -1 || excerpt.indexOf(text) !== -1;
+      var visible = matchesYear && matchesText;
+      card.style.display = visible ? 'block' : 'none';
+      if (visible) {
+        visibleCount += 1;
       }
     });
+
+    yearSections.forEach(function(section) {
+      var year = section.getAttribute('data-year');
+      var cardsInYear = postCards.filter(function(card) {
+        return card.getAttribute('data-year') === year;
+      });
+      var anyVisible = cardsInYear.some(function(card) {
+        return card.style.display === 'block';
+      });
+      section.style.display = anyVisible ? 'block' : 'none';
+    });
+
+    emptyState.hidden = visibleCount > 0;
   }
 
-  filterBar.appendChild(createButton('All', '', 'year'));
-  years.forEach(function(year) {
-    filterBar.appendChild(createButton(year, year, 'year'));
+  function updateButtons() {
+    var buttons = yearFilter.querySelectorAll('.filterPill');
+    buttons.forEach(function(button) {
+      button.classList.toggle('active', button.getAttribute('data-value') === activeYear);
+    });
+  }
+
+  yearFilter.appendChild(createButton('All', 'all'));
+  years.sort(function(a, b) { return b - a; }).forEach(function(year) {
+    yearFilter.appendChild(createButton(year, year));
   });
 
-  var monthNames = ['january','february','march','april','may','june','july','august','september','october','november','december'];
-  months.sort(function(a, b) {
-    return monthNames.indexOf(a) - monthNames.indexOf(b);
-  });
-
-  filterBar.appendChild(createButton('Month', '', 'month'));
-  months.forEach(function(month) {
-    filterBar.appendChild(createButton(month.charAt(0).toUpperCase() + month.slice(1), month, 'month'));
+  searchInput.addEventListener('input', updateFilters);
+  resetButton.addEventListener('click', function() {
+    activeYear = 'all';
+    searchInput.value = '';
+    updateFilters();
+    updateButtons();
   });
 
   updateFilters();
-  updateActiveState();
+  updateButtons();
 })();
 </script>
