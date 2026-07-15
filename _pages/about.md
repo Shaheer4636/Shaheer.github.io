@@ -7,75 +7,61 @@ redirect_from:
   - /about.html
 ---
 
-I am a Computer Science graduate from the [Pakistan Institute of Engineering and Applied Sciences (PIEAS)](https://www.pieas.edu.pk) with a **3.48/4.0 CGPA**, currently working as a Cloud and DevOps Engineer while pursuing a PhD in distributed systems and cloud infrastructure. My research centers on the design and evaluation of large-scale orchestration systems — specifically how clusters, schedulers, and resource managers can be made reliable, secure, and efficient across heterogeneous environments.
+I am a Computer Science graduate from the [Pakistan Institute of Engineering and Applied Sciences (PIEAS)](https://www.pieas.edu.pk) with a **3.48/4.0 CGPA**. I work as a Cloud and DevOps engineer and I am also building toward research in distributed systems and cloud infrastructure.
 
-My foundational research work began at the **National Centre for Physics (NCP – CoE Aitec)** under Dr. Muhammad Imran, a former CERN scientist, where I deployed Kubernetes-based infrastructure for distributed workloads on bare-metal on-premise servers. I extended this as my Final Year Project at PIEAS under Dr. Irfan Ul Haq, resulting in a published research paper and a platform that earned research funding.
+My early work at the **National Centre for Physics (NCP CoE Aitec)** helped me build Kubernetes based infrastructure for distributed scientific workloads on bare metal servers. That experience shaped how I think about cluster design, resource boundaries, and the tradeoffs between flexibility and control. I carried that direction into my final year project at PIEAS, which led to a published paper and support for the platform from research funding.
 
-I am currently collaborating with researchers at **Rensselaer Polytechnic Institute (RPI)** on **Privacy, Security, and Data Leakage Concerns in Multi-Agent AI Systems** — examining how autonomous agent pipelines introduce novel threat surfaces, how sensitive data propagates across agent boundaries, and what architectural and policy-level controls are necessary to contain leakage in distributed agentic deployments.
+Today I work at **AppLab Qatar** while continuing to explore systems that are reliable, observable, and efficient at scale. I am also collaborating with researchers at **Rensselaer Polytechnic Institute (RPI)** on privacy, security, and data leakage concerns in multi agent AI systems, with a focus on how information moves across agent boundaries and what controls are needed to contain it.
 
-My broader research goal is to develop orchestration layers that unify on-premises and cloud clusters, with a focus on resource scheduling, fault tolerance, and security boundaries in distributed systems.
+My long term goal is to build orchestration layers that connect research clusters, cloud platforms, and production services in a way that is secure, efficient, and resilient.
 
----
+## Recent updates
 
-<div style="background: linear-gradient(135deg, #2f7f93 0%, #1a5a6e 100%); border-radius: 12px; padding: 1.6rem 2rem; margin-bottom: 2rem; color: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-  <div style="font-size: 1.5rem; margin-bottom: 0.4rem;">✍️</div>
-  <div style="font-size: 1.15em; font-weight: 700; margin-bottom: 0.4rem;">Personal Blog</div>
-  <div style="color: rgba(255,255,255,0.88); font-size: 0.97em; line-height: 1.65; margin-bottom: 0.9rem;">Beyond research papers and technical work — reflections on learning, life, ideas, and experiences worth writing down.</div>
-  <a href="/personal-blog/" style="display: inline-block; background: rgba(255,255,255,0.18); color: #fff; border: 1px solid rgba(255,255,255,0.45); padding: 0.38rem 1.1rem; border-radius: 6px; font-size: 0.92em; font-weight: 600; text-decoration: none;">Read the Blog →</a>
+I was recently awarded **$5,000 in Microsoft Azure for Research credits** to support cloud infrastructure experiments and distributed systems work.
+
+<div style="margin: 1.4rem 0 1.8rem 0; padding: 1rem 1.2rem; border: 1px solid #d8e3ea; border-radius: 10px; background: #f8fbfd;">
+  <p style="margin: 0 0 0.45rem 0; font-weight: 700; color: #1a5a6e;">Go to personal blog</p>
+  <p style="margin: 0; line-height: 1.6;">I write about research, systems thinking, fitness, and the lessons that show up outside the codebase. <a href="/personal-blog/">Visit the blog</a>.</p>
 </div>
 
----
+I am continuing a research collaboration with **RPI** on privacy, security, and data leakage in multi agent AI systems.
 
-## News
+I completed the GRE General Test with a verbal score of **165**, quantitative score of **163**, and analytical writing score of **4.0**.
 
-**[Mar 2026]** Awarded **$5,000 in Microsoft Azure for Research credits** to support cloud infrastructure experiments and distributed systems research.
+I joined **AppLab Qatar** as a Cloud and DevOps Engineer in October 2025.
 
-**[Mar 2026]** Ongoing research collaboration with **RPI** on **Privacy, Security, and Data Leakage in Multi-Agent AI Systems**.
+I also served as a lead instructor for a Python and SDLC bootcamp, where I delivered 120 hours of live instruction to learners.
 
-**[Jul 2025]** GRE General Test — Verbal **165** (95th percentile), Quantitative **163** (60th percentile), Analytical Writing **4.0** (63rd percentile).
+## Research interests
 
-**[Oct 2025]** Joined **AppLab Qatar** as Cloud and DevOps Engineer.
+* Distributed systems reliability, fault tolerance, and resource scheduling
+* Container orchestration and Kubernetes based cluster management
+* Security and privacy in distributed and multi agent systems
+* Hybrid cloud and on premises infrastructure design
+* Data leakage and trust boundaries in agentic AI deployments
 
-**[Aug 2025]** Received certification from Primus Learning confirming 120 hours of live instruction as Lead Instructor for the Python Programming & SDLC bootcamp.
+## Ongoing research
 
----
-
-## Research Interests
-
-- Distributed systems reliability, fault tolerance, and resource scheduling
-- Container orchestration and Kubernetes-based cluster management
-- Security and privacy in distributed and multi-agent systems
-- Hybrid cloud and on-premises infrastructure design
-- Data leakage and trust boundaries in agentic AI deployments
-
----
-
-## Ongoing Research
-
-**Privacy, Security, and Data Leakage Concerns in Multi-Agent AI Systems**
+**Privacy, Security, and Data Leakage Concerns in Multi Agent AI Systems**
 *Collaboration with Rensselaer Polytechnic Institute (RPI)*
 
-Multi-agent AI systems — where autonomous agents interact, delegate, and share context across boundaries — introduce a class of security and privacy challenges that are structurally different from those in traditional software. This research investigates how sensitive data propagates across agent handoffs, what leakage vectors emerge in orchestration layers, and how distributed system design principles can inform containment strategies. The work draws on formal threat modeling, empirical analysis of agent communication patterns, and evaluation of architectural controls including sandboxing, access scoping, and audit mechanisms.
-
----
+Multi agent AI systems, where autonomous agents interact, delegate, and share context across boundaries, introduce a different class of security and privacy challenges from those in traditional software. This research examines how sensitive data propagates across agent handoffs, what leakage vectors emerge in orchestration layers, and how distributed system design principles can inform containment strategies.
 
 ## Education
 
-**B.S. Computer and Information Sciences** — PIEAS, Islamabad, Pakistan (Sep 2020 – Jun 2024)
-CGPA: 3.48/4.0 | Distinction in 4 subjects | Outstanding FYP Award
+**B.S. Computer and Information Sciences**. PIEAS, Islamabad, Pakistan. Sep 2020 to Jun 2024.
+CGPA: 3.48/4.0. Distinction in 4 subjects. Outstanding FYP Award.
 
----
+## Selected experience
 
-## Selected Experience
+**AppLab Qatar**. Cloud and DevOps Engineer. Oct 2025 to Present.
+Built CloudWatch Synthetics heartbeats, automated SLA breach reporting pipelines, and Terraform based infrastructure with Azure DevOps CI CD.
 
-**AppLab Qatar** — Cloud and DevOps Engineer *(Oct 2025 – Present)*
-Built CloudWatch Synthetics heartbeats, automated SLA-breach reporting pipelines (S3 → Lambda → PDF), and Terraform-based infrastructure with Azure DevOps CI/CD.
+**Priv Inc.**. DevOps Engineer. Apr 2024 to Oct 2025.
+Maintained AWS infrastructure across Kubernetes, databases, and Elasticsearch at 99.9 percent plus uptime. Established disaster recovery runbooks that supported low recovery time and recovery point objectives.
 
-**Priv Inc.** — DevOps Engineer *(Apr 2024 – Oct 2025)*
-Maintained AWS infrastructure across Kubernetes, databases, and Elasticsearch at 99.9%+ uptime. Established DR runbooks enabling ≤1-hour RTO and ≤15-minute RPO.
+**National Centre for Physics (NCP)**. Research Intern. Jun 2023 to Sep 2023.
+Deployed Kubernetes based multi tenant research infrastructure using Kubeflow with LDAP backed authentication and per namespace resource quota controls on bare metal servers. Contributed to Apache Hadoop cluster setup across HDFS, YARN, HBase, and ZooKeeper.
 
-**National Centre for Physics (NCP)** — Research Intern *(Jun 2023 – Sept 2023)*
-Deployed Kubernetes-based multi-tenant research infrastructure using Kubeflow with LDAP-backed authentication and per-namespace resource quota controls on bare-metal servers. Contributed to Apache Hadoop (HDFS, YARN, HBase, ZooKeeper) cluster setup.
-
-**Primus Learning** — Lead Instructor *(Feb 2025 – May 2025)*
-Delivered 120 hours of instruction to 25 learners covering Python, software testing, CI/CD, and SDLC fundamentals.
+**Primus Learning**. Lead Instructor. Feb 2025 to May 2025.
+Delivered 120 hours of instruction to 25 learners covering Python, software testing, CI CD, and SDLC fundamentals.

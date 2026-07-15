@@ -23,5 +23,8 @@ main:
   - title: "Personal Blog"
     url: /personal-blog/
 
+  - title: "Goals"
+    url: /goals/
+
   - title: "CV"
     url: /cv/
