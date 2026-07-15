@@ -1,117 +1,219 @@
 ---
-layout: archive
+layout: single
 permalink: /personal-blog/
 title: "Personal Blog"
-author_profile: true
+author_profile: false
 ---
 
 <style>
-.personal-blog-hero {
+.blogIntro {
   background: linear-gradient(135deg, var(--global-base-color) 0%, #1a5a6e 100%);
   border-radius: 12px;
-  padding: 2.5rem 2rem;
+  padding: 2rem 2rem;
   margin-bottom: 2rem;
   color: #fff;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 }
-.personal-blog-hero h2 {
-  color: #fff;
-  font-size: 1.6em;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  border: none;
+.blogIntro h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
 }
-.personal-blog-hero p {
-  color: rgba(255,255,255,0.88);
-  font-size: 1.05em;
+.blogIntro p {
   margin: 0;
+  font-size: 1rem;
   line-height: 1.7;
 }
-.personal-blog-hero .hero-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.75rem;
+.blogSectionTitle {
   display: block;
-}
-.blog-section-title {
-  display: inline-block;
-  font-size: 1.08em;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--global-base-color);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 1rem 0 1.2rem 0;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid var(--global-base-color);
 }
-.blog-nav {
+.blogFilterBar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.5rem;
 }
-.blog-nav a {
-  display: inline-block;
-  padding: 0.45rem 0.8rem;
+.filterButton {
+  padding: 0.45rem 0.9rem;
   border-radius: 999px;
   background: #f4f7f9;
+  border: 1px solid rgba(26,90,110,0.15);
   color: #1a5a6e;
-  text-decoration: none;
-  font-size: 0.9em;
+  cursor: pointer;
+  font-size: 0.92rem;
   font-weight: 600;
 }
-.blog-nav a:hover {
+.filterButton:hover,
+.filterButton.active {
   background: #e8f1f5;
 }
-.personal-blog-empty {
+.blogList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.blogItem {
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.blogItemTitle {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.2rem;
+}
+.blogItemTitle a {
+  color: #2eb8d5;
+  text-decoration: none;
+}
+.blogItemTitle a:hover {
+  text-decoration: underline;
+}
+.blogMeta {
+  margin: 0 0 0.75rem 0;
+  color: rgba(255,255,255,0.78);
+  font-size: 0.95rem;
+}
+.blogExcerpt {
+  margin: 0;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+}
+.blogEmpty {
   background: var(--global-footer-bg-color);
   border-left: 4px solid var(--global-base-color);
   border-radius: 0 8px 8px 0;
   padding: 1.5rem 1.75rem;
   color: var(--global-text-color);
   font-size: 0.97em;
-  margin-top: 1rem;
 }
-.personal-blog-empty strong {
+.blogEmpty strong {
   color: var(--global-base-color);
 }
 </style>
 
 {% include base_path %}
 
-<div class="personal-blog-hero">
-  <span class="hero-icon">✍️</span>
-  <h2>Thoughts, stories, and reflections</h2>
-  <p>
-    This is a place for writing beyond the research papers. I use it for notes on work, habits, travel, and the ideas that stay with me.
-  </p>
+<div class="blogIntro">
+  <h2>Personal blog</h2>
+  <p>Short notes on systems, tools, workflow, and the habits that matter in engineering work.</p>
 </div>
 
-<span class="blog-section-title">Browse posts</span>
+<span class="blogSectionTitle">Filter by year or month</span>
 
-<div class="blog-nav">
-  <a href="#2024">2024</a>
-  <a href="#2023">2023</a>
-  <a href="#2022">2022</a>
-  <a href="#2021">2021</a>
-  <a href="#2001">2001</a>
-</div>
+<div class="blogFilterBar" id="blogFilterBar"></div>
 
-{% if site.personal_blog.size > 0 %}
-  {% assign posts_by_year = site.personal_blog | sort: 'date' | reverse %}
-  {% assign current_year = '' %}
-  {% for post in posts_by_year %}
-    {% assign year = post.date | date: '%Y' %}
-    {% if year != current_year %}
-      {% if current_year != '' %}
-        </div>
+<ol class="blogList" id="blogList">
+  {% assign postsByDate = site.personal_blog | sort: 'date' | reverse %}
+  {% assign currentYear = '' %}
+  {% assign currentMonth = '' %}
+  {% for post in postsByDate %}
+    {% assign postYear = post.date | date: '%Y' %}
+    {% assign postMonth = post.date | date: '%B' %}
+    <li class="blogItem" data-year="{{ postYear }}" data-month="{{ postMonth | downcase }}">
+      {% if postYear != currentYear %}
+        <h2 id="{{ postYear | slugify }}" class="archive__subtitle">{{ postYear }}</h2>
+        {% assign currentYear = postYear %}
+        {% assign currentMonth = '' %}
       {% endif %}
-      <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-      {% assign current_year = year %}
-    {% endif %}
-    {% include archive-single.html %}
+      {% if postMonth != currentMonth %}
+        <h3 class="archive__subtitle" style="font-size: 1rem; margin: 0.75rem 0 0.5rem 0; color: rgba(255,255,255,0.78);">{{ postMonth }}</h3>
+        {% assign currentMonth = postMonth %}
+      {% endif %}
+      <div class="blogItemTitle">
+        <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+      </div>
+      <p class="blogMeta">Published: {{ post.date | date: '%B %d, %Y' }}</p>
+      {% if post.excerpt %}
+        <p class="blogExcerpt">{{ post.excerpt | markdownify | strip_html }}</p>
+      {% endif %}
+    </li>
   {% endfor %}
-{% else %}
-  <div class="personal-blog-empty">
-    <strong>Coming soon!</strong> Posts are on their way. I will add more entries here as the ideas and experiences build up.
-  </div>
-{% endif %}
+</ol>
+
+<script>
+(function() {
+  var blogList = document.getElementById('blogList');
+  var filterBar = document.getElementById('blogFilterBar');
+  var posts = Array.prototype.slice.call(blogList.querySelectorAll('.blogItem'));
+
+  var years = posts.reduce(function(acc, item) {
+    var year = item.getAttribute('data-year');
+    if (year && acc.indexOf(year) === -1) {
+      acc.push(year);
+    }
+    return acc;
+  }, []);
+
+  var months = posts.reduce(function(acc, item) {
+    var month = item.getAttribute('data-month');
+    if (month && acc.indexOf(month) === -1) {
+      acc.push(month);
+    }
+    return acc;
+  }, []);
+
+  var activeYear = '';
+  var activeMonth = '';
+
+  function createButton(label, value, type) {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'filterButton';
+    button.textContent = label;
+    button.setAttribute('data-filter-type', type);
+    button.setAttribute('data-filter-value', value);
+    button.addEventListener('click', function() {
+      if (type === 'year') {
+        activeYear = activeYear === value ? '' : value;
+      } else {
+        activeMonth = activeMonth === value ? '' : value;
+      }
+      updateFilters();
+      updateActiveState();
+    });
+    return button;
+  }
+
+  function updateFilters() {
+    posts.forEach(function(item) {
+      var showYear = !activeYear || item.getAttribute('data-year') === activeYear;
+      var showMonth = !activeMonth || item.getAttribute('data-month') === activeMonth;
+      item.style.display = showYear && showMonth ? 'block' : 'none';
+    });
+  }
+
+  function updateActiveState() {
+    var buttons = filterBar.querySelectorAll('.filterButton');
+    buttons.forEach(function(button) {
+      var type = button.getAttribute('data-filter-type');
+      var value = button.getAttribute('data-filter-value');
+      if ((type === 'year' && value === activeYear) || (type === 'month' && value === activeMonth)) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
+    });
+  }
+
+  filterBar.appendChild(createButton('All', '', 'year'));
+  years.forEach(function(year) {
+    filterBar.appendChild(createButton(year, year, 'year'));
+  });
+
+  var monthNames = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+  months.sort(function(a, b) {
+    return monthNames.indexOf(a) - monthNames.indexOf(b);
+  });
+
+  filterBar.appendChild(createButton('Month', '', 'month'));
+  months.forEach(function(month) {
+    filterBar.appendChild(createButton(month.charAt(0).toUpperCase() + month.slice(1), month, 'month'));
+  });
+
+  updateFilters();
+  updateActiveState();
+})();
+</script>
