@@ -276,7 +276,7 @@ author_profile: false
   <div class="blogGrid">
     <aside class="blogSidebar" aria-label="Profile information">
       <section class="sidebarCard">
-        <img class="profilePhoto" src="{{ base_path }}/profile.jpeg" alt="Profile photo of Muhammad Shaheer">
+        <img class="profilePhoto" src="{{ '/images/profile.jpeg' | relative_url }}" alt="Profile photo of Muhammad Shaheer">
         <p class="profileName">Muhammad Shaheer</p>
         <p class="profileRole">Cloud and DevOps Engineer at AppLab Qatar</p>
         <p class="profileLocation">Islamabad, Pakistan</p>
@@ -318,14 +318,14 @@ author_profile: false
             {% assign current_year = post_year %}
           {% endif %}
           <article class="postCard" data-title="{{ post.title | strip_html | downcase }}" data-excerpt="{{ post.excerpt | strip_html | downcase }}" data-year="{{ post_year }}">
-            <a class="postTitle" href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+            <a class="postTitle" href="{{ post.url | relative_url }}">{{ post.title }}</a>
             <div class="postMeta">
               <span><i class="fa fa-calendar metaIcon" aria-hidden="true"></i>{{ post.date | date: '%B %d, %Y' }}</span>
               <span aria-hidden="true">·</span>
-              <span><i class="fa fa-clock-o metaIcon" aria-hidden="true"></i>{{ post.read_time | default: '4 min read' }}</span>
+              <span><i class="fa fa-clock-o metaIcon" aria-hidden="true"></i>{% include read-time.html %}</span>
             </div>
             <p class="postExcerpt">{{ post.excerpt | markdownify | strip_html }}</p>
-            <a class="readMore" href="{{ base_path }}{{ post.url }}">Read more</a>
+            <a class="readMore" href="{{ post.url | relative_url }}">Read more</a>
           </article>
         {% endfor %}
       </div>

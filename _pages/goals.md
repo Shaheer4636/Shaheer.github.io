@@ -7,40 +7,55 @@ author_profile: false
 
 <style>
 .goalsPage {
-  max-width: 1120px;
+  max-width: 1200px;
   margin: 120px auto 48px;
   padding: 0 24px;
 }
 .goalsGrid {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 48px;
+  grid-template-columns: 280px 1fr;
+  gap: 56px;
 }
 .goalsSidebar {
   position: sticky;
-  top: 90px;
+  top: 100px;
   align-self: start;
 }
 .sidebarCard {
   padding: 24px;
+  border-radius: 20px;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 20px;
 }
-.goalHeader {
+.sidebarName {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.sidebarRole,
+.sidebarLocation {
+  margin: 10px 0 0;
+  color: rgba(255,255,255,0.78);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.goalsMain {
+  overflow: hidden;
+}
+.goalsHeader {
+  margin: 0 0 32px;
+}
+.goalsTitle {
   margin: 0 0 24px;
-}
-.goalTitle {
-  margin: 0 0 16px;
-  font-size: 2.6rem;
+  font-size: 3rem;
   line-height: 1.05;
 }
-.goalIntro {
+.goalsIntro {
   margin: 0;
   color: rgba(255,255,255,0.86);
   font-size: 1rem;
-  line-height: 1.7;
-  max-width: 760px;
+  line-height: 1.65;
+  max-width: 740px;
 }
 .goalCards {
   display: grid;
@@ -91,43 +106,43 @@ author_profile: false
   <div class="goalsGrid">
     <aside class="goalsSidebar" aria-label="Profile information">
       <section class="sidebarCard">
-        <p class="profileName">Muhammad Shaheer</p>
-        <p class="profileRole">Cloud and DevOps Engineer at AppLab Qatar</p>
-        <p class="profileLocation">Islamabad, Pakistan</p>
+        <p class="sidebarName">Muhammad Shaheer</p>
+        <p class="sidebarRole">Cloud and DevOps Engineer at AppLab Qatar</p>
+        <p class="sidebarLocation">Islamabad, Pakistan</p>
       </section>
     </aside>
 
-    <main>
-      <header class="goalHeader">
-        <h1 class="goalTitle">Goals</h1>
-        <p class="goalIntro">A concise plan for what I want to build next, how I want to work, and the areas where I am investing the most time.</p>
+    <main class="goalsMain">
+      <header class="goalsHeader">
+        <h1 class="goalsTitle">Goals</h1>
+        <p class="goalsIntro">A clear, structured plan for what I want to build, how I want to work, and the outcomes I am moving toward.</p>
       </header>
 
       <div class="goalCards">
         <section class="goalCard">
           <h2 class="goalSectionTitle">Short term</h2>
           <ul class="goalList">
-            <li class="goalItem">Ship a clean personal blog page with live search and year filters.</li>
-            <li class="goalItem">Keep infrastructure work reliable by improving deployment automation and monitoring.</li>
-            <li class="goalItem">Write three pieces each quarter that clarify how I approach systems design and operations.</li>
+            <li class="goalItem">Finish a clean personal blog page with search and year filters that work together.</li>
+            <li class="goalItem">Keep infrastructure stable by improving deployment automation and monitoring coverage.</li>
+            <li class="goalItem">Write a short technical note every month on systems, operations, or team process.</li>
           </ul>
         </section>
 
         <section class="goalCard">
           <h2 class="goalSectionTitle">Medium term</h2>
           <ul class="goalList">
-            <li class="goalItem">Build more reusable components for cluster orchestration, security, and observability.</li>
-            <li class="goalItem">Share work openly through blog posts, talks, and concise technical notes.</li>
-            <li class="goalItem">Grow the engineering practice around operational resilience and hybrid cloud design.</li>
+            <li class="goalItem">Build reusable patterns for distributed orchestration, security, and observability.</li>
+            <li class="goalItem">Share useful work through writing and public notes rather than keeping it private.</li>
+            <li class="goalItem">Grow the practice around hybrid cloud operations and platform reliability.</li>
           </ul>
         </section>
 
         <section class="goalCard">
           <h2 class="goalSectionTitle">Long term</h2>
           <ul class="goalList">
-            <li class="goalItem">Help shape systems that are easier to secure, easier to scale, and easier to maintain.</li>
-            <li class="goalItem">Move from ad hoc solutions to architecture that feels intentional and predictable.</li>
-            <li class="goalItem">Build work that supports teams, research, and production services without adding friction.</li>
+            <li class="goalItem">Design systems that are easier to secure, easier to run, and simpler to maintain.</li>
+            <li class="goalItem">Move from quick fixes to architecture that feels predictable and intentional.</li>
+            <li class="goalItem">Build work that supports research, teams, and production without adding friction.</li>
           </ul>
         </section>
       </div>
